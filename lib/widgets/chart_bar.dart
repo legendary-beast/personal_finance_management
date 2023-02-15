@@ -15,7 +15,7 @@ return Column(
         Container(
           height: constraint.maxHeight * 0.15,
           child: FittedBox(
-            child: Text('\$${spendingAmount.toStringAsFixed(0)}'),
+            child: Text('\u{20B9}${spendingAmount.toStringAsFixed(0)}'),
           ),
         ),
         SizedBox(

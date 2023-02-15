@@ -5,6 +5,7 @@ import '../models/transaction.dart';
 
 class TransactionList extends StatelessWidget {
   final List<Transaction> transactions;
+  static const IconData rupee = IconData(0xf05db, fontFamily: 'MaterialIcons');
 final Function deleteTx;
   TransactionList(this.transactions,this.deleteTx);
 
@@ -45,7 +46,7 @@ return Column(
                       child: Padding(
                         padding: EdgeInsets.all(6),
                         child: FittedBox(
-                          child: Text('\$${transactions[index].amount}'),
+                          child: Text( '\u{20B9}${transactions[index].amount}'),
                         ),
                       ),
                     ),
